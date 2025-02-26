@@ -1,0 +1,217 @@
+*
+{
+    box-sizing: border-box;
+}
+
+#nav #logo img
+{
+    height: 80px;
+    width: 80px;
+}
+
+.navbar-expand .navbar-nav .nav-link
+{
+    color: black;
+    /* text-shadow: 0 0 2px white, 0 0 5px teal; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-size: 28px;
+    margin: 0px 5px;
+}
+
+.navbar-expand .navbar-nav .nav-link:hover{
+    color: teal;
+    text-decoration: underline;
+}
+
+.mainbody
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-between;
+    width: 100%;
+}
+#card {
+    max-width: 550px; 
+    margin: 25px auto;
+    padding: 30px; 
+    border-radius: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#title {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    color: teal;
+    margin-bottom: 15px;
+}
+
+#name {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #2980b9;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#card .card-text {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    line-height: 2;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+#card .btn-primary {
+    background: linear-gradient(45deg,rgb(2, 96, 96),teal);
+    border: none;
+    padding: 14px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px; 
+    transition: transform 0.2s ease-in-out, background 0.3s ease;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#card .btn-primary:hover {
+    transform: scale(1.07);
+    background: linear-gradient(45deg,teal, rgb(2, 96, 96));
+}
+
+
+
+
+#loginform
+{
+    box-shadow: 0 0 3px black, 0 0 5px silver;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+
+#loginform button
+{
+    padding: 7px 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(25deg,teal,#2c3e50);
+}
+
+
+
+#mainfooter
+{
+    background-color:rgb(65, 63, 63);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#footer1
+{
+    color: white;
+    width: 50%;
+}
+
+#footer2 a
+{
+    display: grid;
+
+    color: cadetblue;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#footer3
+{
+    color: whitesmoke;
+    margin: 0px 40px;
+}
+
+
+#copyright
+{
+    color: whitesmoke;
+    text-align: center;
+    background-color:rgb(65, 63, 63);
+}
+
+#copyright h2
+{
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+#loginform
+{
+    width: 50%;
+    margin: auto;
+}
+
+#dashleft
+{
+    background-color: grey;
+    width: 25%;
+    height: 100vh;
+}
+
+#topdash
+{
+    background-color: teal;
+}
+
+#searchform
+{
+    width: 50%;
+    margin: auto;
+}
+
+#searchform #btn
+{
+    margin: 10px;
+}
+
+#parent
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#parent #title h1
+{
+    font-size: 60px;
+    color: teal
+}
+#parent #hero img
+{
+    width: 100%;
+    height: 100%;
+}
