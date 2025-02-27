@@ -1,4 +1,5 @@
 const companyModel = require("../model/companyModel")
+const candidateModel = require("../model/candidateModel")
 
 const registrationData = async(req,res)=>{
     const {name, title, address, city, salary, description , email, password} = req.body;
@@ -72,9 +73,39 @@ const companySearch = async(req,res)=>{
     
 }
 
+const JobInfo =async(req,res)=>{
+    const {jobid} = req.query;
+
+    try {
+        
+        let jobdetails = await companyModel.findById(jobid);
+        res.status(200).send(jobdetails);
+        
+    } catch (error) {
+        res.status(400).send("Cant Send")
+    }
+}
+
+const applySave=async(req,res)=>
+{
+    const { jobid, name, email, address, city, age, contact, exp} = req.body;
+    const candidateinfo = await candidateModel.create({
+         name:name,
+        email:email,
+        address:address,
+        city:city,
+        age:age,
+        contact:contact,
+        exp:exp,
+        companyid:jobid
+    })
+    
+}
 module.exports = {
     registrationData,
     jobDisplay,
     companyLogin,
-    companySearch
+    companySearch,
+    JobInfo,
+    applySave
 }

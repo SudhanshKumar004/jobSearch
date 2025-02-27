@@ -6,6 +6,7 @@ import Registration from './pages/Registration'
 import CompanyLogin from './pages/CompanyLogin'
 import CompanyDashboard from './CompanyDashboard'
 import Search from './pages/Search'
+import Jobapplication from './pages/Jobapplication'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='register' element={<Registration />}/>
          <Route path='companylogin' element={<CompanyLogin />}/>
         <Route path='companysearch' element={<Search />} />
+        <Route path='jobapplication/:id' element={<Jobapplication />} />
        </Route>
       </Routes>
 

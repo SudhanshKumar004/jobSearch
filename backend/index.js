@@ -4,6 +4,7 @@ const cors = require("cors")
 const mongoose = require("mongoose")
 require('dotenv').config();
 const companyRoutes = require("./Routes/companyRoutes")
+const candidateRoutes = require("./Routes/candidateRoutes")
 
 app.use(cors());
 
@@ -17,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use("/company" , companyRoutes)
+app.use("/candidate" , candidateRoutes)
 
 const Port = process.env.PORT || 3000;
 app.listen(Port , ()=>{

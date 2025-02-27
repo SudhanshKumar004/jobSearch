@@ -3,11 +3,15 @@ import axios from 'axios'
 import API_URL from '../config'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import {useNavigate} from 'react-router-dom'
 
 const Home = () => {
 
   const[mydata , setMydata] = useState([])
+  const nav = useNavigate();
+
+
+
   const loadData =async()=>{
     let api =`${API_URL}/company/jobdisplay`
     
@@ -24,6 +28,9 @@ console.log(mydata);
     
   }
 
+  const jobapply=(id)=>{
+    nav(`/jobapplication/${id}`)
+  }
 
   let ans = mydata.map((key)=>{
     return(
@@ -42,7 +49,7 @@ console.log(mydata);
            {key.description} <br />
            <hr />
         </Card.Text>
-        <Button variant="primary">Apply Now</Button>
+        <Button variant="primary" onClick={()=>{jobapply(key._id)}}>Apply Now</Button>
       </Card.Body>
     </Card>
       </>
