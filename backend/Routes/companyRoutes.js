@@ -8,6 +8,7 @@ route.get("/jobdisplay" , jobController.jobDisplay)
 route.post("/companylogin" , jobController.companyLogin)
 route.post("/searchcompany" , jobController.companySearch)
 route.get("/jobinfo" , jobController.JobInfo)
+route.get("/applications" , jobController.Applications)
 
 
 module.exports = route

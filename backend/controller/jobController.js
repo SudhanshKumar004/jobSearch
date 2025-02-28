@@ -99,6 +99,17 @@ const applySave=async(req,res)=>
         exp:exp,
         companyid:jobid
     })
+    res.status(200).send("Applied SuccessFully!!")
+}
+
+const Applications =async(req,res)=>{
+    const {companyid} = req.query;
+    try {
+        const allData = await candidateModel.find({companyid:companyid})
+    res.status(200).send(allData)       
+    } catch (error) {
+        res.status(400).send(error);
+    }
     
 }
 module.exports = {
@@ -107,5 +118,6 @@ module.exports = {
     companyLogin,
     companySearch,
     JobInfo,
-    applySave
+    applySave,
+    Applications
 }

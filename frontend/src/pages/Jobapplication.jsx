@@ -56,51 +56,50 @@ const Jobapplication = () => {
 
   return (
     <>
-      <h1 align='center'>Job Application Form</h1>
-      <div>
-        <h3>Applying For: {jobinfo.name}</h3>
-      </div>
-      <Form id="loginform">
+      <h1 className="jobappform">Job Application Form</h1>
+<div>
+  <h3>Applying For: {jobinfo.title}</h3>
+  <h3>Company: {jobinfo.name}</h3>
+</div>
+<Form id="loginform" className="jobappform">
+  <Form.Group className="form-group">
+    <Form.Label>Enter Name</Form.Label>
+    <Form.Control type="text" name="name" onChange={handleInput} />
+  </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter Name</Form.Label>
-        <Form.Control type="text" name='name' onChange={handleInput}/>
-      </Form.Group>
+  <Form.Group className="form-group">
+    <Form.Label>Enter Email</Form.Label>
+    <Form.Control type="email" name="email" onChange={handleInput} />
+  </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter Email</Form.Label>
-        <Form.Control type="email" name='email' onChange={handleInput}/>
-      </Form.Group>
+  <Form.Group className="form-group">
+    <Form.Label>Enter Address</Form.Label>
+    <Form.Control type="text" name="address" onChange={handleInput} />
+  </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter Address</Form.Label>
-        <Form.Control type="text" name='address' onChange={handleInput}/>
-      </Form.Group>
+  <Form.Group className="form-group">
+    <Form.Label>Enter City</Form.Label>
+    <Form.Control type="text" name="city" onChange={handleInput} />
+  </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter City</Form.Label>
-        <Form.Control type="text" name='city' onChange={handleInput}/>
-      </Form.Group>
+  <Form.Group className="form-group">
+    <Form.Label>Enter Age</Form.Label>
+    <Form.Control type="text" name="age" onChange={handleInput} />
+  </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter Age</Form.Label>
-        <Form.Control type="text" name='age' onChange={handleInput}/>
-      </Form.Group>
+  <Form.Group className="form-group">
+    <Form.Label>Enter Contact No.</Form.Label>
+    <Form.Control type="text" name="contact" onChange={handleInput} />
+  </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter Contact No.</Form.Label>
-        <Form.Control type="text" name='contact' onChange={handleInput}/>
-      </Form.Group>
+  <Form.Group className="form-group">
+    <Form.Label>Experience (If Have)</Form.Label>
+    <Form.Control type="text" name="exp" onChange={handleInput} />
+  </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Experience (If Have)</Form.Label>
-        <Form.Control type="text" name='exp' onChange={handleInput}/>
-      </Form.Group>
+  <button className="applybutton" onClick={handleSubmit}>Apply</button>
+</Form>
 
-      
-      
-      <button onClick={handleSubmit}>Apply</button>
-    </Form>
     </>
   )
 }

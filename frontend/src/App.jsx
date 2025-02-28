@@ -7,6 +7,7 @@ import CompanyLogin from './pages/CompanyLogin'
 import CompanyDashboard from './CompanyDashboard'
 import Search from './pages/Search'
 import Jobapplication from './pages/Jobapplication'
+import Applications from './pages/Applications'
 
 const App = () => {
   return (
@@ -24,7 +25,9 @@ const App = () => {
       </Routes>
 
       <Routes>
-        <Route path='companydashboard' element={<CompanyDashboard />} />
+        <Route path='companydashboard' element={<CompanyDashboard />}>
+        <Route path='applications' element={<Applications />} />
+        </Route>
       </Routes>
 
       

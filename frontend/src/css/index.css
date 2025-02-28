@@ -94,15 +94,129 @@
     background: linear-gradient(45deg,teal, rgb(2, 96, 96));
 }
 
+.jobcard {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jobcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.jobcardtitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.jobcardsubtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+}
+
+.jobcardtext {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.jobcardtext hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+.jobcard .applybtn {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.jobcard .applybtn:hover {
+  background: #0056b3;
+}
+
+
+.jobsearchcontainer {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jobsearchcontainer h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.search-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.search-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
 
 
 
 #loginform
 {
-    box-shadow: 0 0 3px black, 0 0 5px silver;
+    box-shadow: 0 0 3px silver, 0 0 5px silver;
     padding: 10px;
     border-radius: 4px;
-    margin-bottom: 10px;
+    padding-bottom: 15px;
     height: 100%;
 }
 
@@ -116,6 +230,200 @@
     font-size: 18px;
     background: linear-gradient(25deg,teal,#2c3e50);
 }
+
+.dash
+{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background: #2c3e50;
+    color: white;
+}
+
+table thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+table tbody td {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.jobappform {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jobappform h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.jobappform h3 {
+  text-align: center;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.applybutton {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.applybutton:hover {
+  background: #0056b3;
+}
+
+
+#topdash {
+  background: linear-gradient(36deg, teal, #00c6ff);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#topdash h1 {
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#topdash h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#topdash button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#topdash button:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+
+.dash {
+  display: flex;
+}
+
+#dashleft {
+  width: 250px;
+  background: #242526;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#dashleft h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#dashleft a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+#dashleft a:hover {
+  background: #3a3b3c;
+}
+
+.jobdata {
+  flex-grow: 1;
+  padding: 20px;
+  background: #f4f4f4;
+  overflow-y: auto;
+}
+
 
 
 
@@ -214,4 +522,43 @@
 {
     width: 100%;
     height: 100%;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jobappform {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .jobcard {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .jobsearchcontainer {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .dash {
+    flex-direction: column;
+  }
+
+  #dashleft {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #dashleft h2 {
+    display: none;
+  }
+
+  .jobdata {
+    height: auto;
+  }
 }

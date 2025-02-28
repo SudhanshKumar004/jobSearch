@@ -69,7 +69,6 @@ console.log(mydata);
         </div>
 
     <div id='hero'>
-      {/* <img src="https://www.pngarts.com/files/1/Career-Transparent-Background-PNG.png" alt="" /> */}
       <img src="https://www.pinclipart.com/picdir/big/2-22120_clip-art-transparent-library-jobs-job-announcement-find.png" alt="" />
       </div>
 
